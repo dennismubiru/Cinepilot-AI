@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+* {
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #e8f4fd;
+  color: #0f2a3f;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.font-display {
+  font-family: 'DM Serif Display', serif;
+}
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes pulse-blue {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-pulse-blue {
+  animation: pulse-blue 1.4s ease-in-out infinite;
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s ease forwards;
+}
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+.step-active {
+  border-color: #1a6fa8;
+  color: #1a6fa8;
+}
+.step-done {
+  border-color: #1a7a4a;
+  color: #1a7a4a;
+  background-color: rgba(26, 122, 74, 0.08);
+}
+.step-pending {
+  border-color: #b8d8ef;
+  color: #7aaccb;
+}
