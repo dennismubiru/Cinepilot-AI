@@ -169,28 +169,4 @@ scripts/
   generate-pptx.mjs          # Generates CinePilot_AI_PitchDeck.pptx
   generate-video.mjs         # Generates CinePilot_AI_Presentation.mp4
   slides.html                # HTML slide source for the video generator
-```
 
----
-
-## Generating pitch materials
-
-```bash
-# PowerPoint pitch deck → output/CinePilot_AI_PitchDeck.pptx
-node scripts/generate-pptx.mjs
-
-# 3-minute video presentation → output/CinePilot_AI_Presentation.mp4
-node scripts/generate-video.mjs
-```
-
----
-
-## Hackathon criteria
-
-| Criterion | Implementation |
-|-----------|---------------|
-| Gemini / Google Cloud Agent Platform | Core reasoning agent across both pipeline modes |
-| Partner integration (Parallel) | Research step in both pipelines; crew directory sourcing |
-| Real media & entertainment use case | Film production planning and creative development |
-| Multi-step agentic workflow | Six-step Production Planner + five-step Concept Developer, each with status bar |
-| Working integration | Partner API called at the research step in both workflows |
